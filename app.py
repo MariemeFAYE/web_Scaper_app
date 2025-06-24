@@ -40,9 +40,11 @@ st.markdown(
 )
 
 # Affiche une belle image en haut
-st.image("https://img.freepik.com/free-vector/web-scraping-concept-illustration_114360-9334.jpg",
-         use_container_width=True, caption="Illustration du scraping web")
-
+st.image(
+    "https://img.freepik.com/free-vector/web-scraping-concept-illustration_114360-9334.jpg",
+    use_container_width=True,  # Paramètre correct
+    caption="Illustration du scraping web"
+)
 # Section d'accueil
 st.markdown("## 🚀 Fonctionnalités de l'application")
 st.markdown("""
