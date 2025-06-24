@@ -1,0 +1,56 @@
+# Fichiers de données
+data/
+
+# Secrets et configurations sensibles
+.streamlit/secrets.toml
+.env
+*.key
+*.pem
+
+# Environnements virtuels
+venv/
+env/
+.venv/
+venv*/
+env*/
+.venv*/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers d'éditeur
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Fichiers de cache
+.cache/
+.pytest_cache/
+
+# Fichiers de sortie
+*.log
+*.sqlite3
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Fichiers spécifiques à Streamlit
+.streamlit/config.toml
+
+# Ignorer des fichiers spécifiques
+mon_fichier_sensible.txt
+
+# Ignorer des dossiers supplémentaires
+mon_dossier_privé/
+backups/
+
