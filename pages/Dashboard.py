@@ -111,7 +111,7 @@ if df is not None:
                 st.plotly_chart(fig1, use_container_width=True)
             else:
                 fig, ax = plt.subplots(figsize=(10, 6))
-                sns.histplot(df_filtered['Prix'], bins=30, kde=True, ax=ax, color="orange")
+                plt.histplot(df_filtered['Prix'], bins=30, kde=True, ax=ax, color="orange")
                 ax.set_xlabel("Prix (FCFA)")
                 ax.set_ylabel("Nombre")
                 ax.set_title("Distribution des Prix")
@@ -128,7 +128,7 @@ if df is not None:
                 st.plotly_chart(fig2, use_container_width=True)
             else:
                 fig, ax = plt.subplots(figsize=(10, 6))
-                sns.histplot(df_filtered['Nombre_pieces'], bins=15, kde=True, ax=ax, color="skyblue")
+                plt.histplot(df_filtered['Nombre_pieces'], bins=15, kde=True, ax=ax, color="skyblue")
                 ax.set_xlabel("Nombre de pièces")
                 ax.set_ylabel("Fréquence")
                 ax.set_title("Distribution des pièces")
@@ -146,7 +146,7 @@ if df is not None:
                 st.plotly_chart(fig3, use_container_width=True)
             else:
                 fig, ax = plt.subplots(figsize=(10, 6))
-                sns.histplot(df_filtered['Superficie'], bins=30, kde=True, ax=ax, color="#EF553B")
+                plt.histplot(df_filtered['Superficie'], bins=30, kde=True, ax=ax, color="#EF553B")
                 ax.set_xlabel("Superficie (m²)")
                 ax.set_ylabel("Nombre")
                 ax.set_title("Distribution des Superficies")

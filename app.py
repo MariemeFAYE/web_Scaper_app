@@ -48,11 +48,10 @@ st.image(
 # Section d'accueil
 st.markdown("## 🚀 Fonctionnalités de l'application")
 st.markdown("""
-- 📄 **Scraper** les données d'annonces immobilières depuis des sites web
-- 🧹 **Nettoyer** et préparer les données extraites
+- 📄 **Scraper** des données depuis des sites web
 - 📊 **Analyser** les données via des dashboards interactifs
 - 📝 **Évaluer** l'application via un formulaire simple
-- 💾 **Télécharger** les données brutes ou nettoyées
+- 💾 **Télécharger** les données brutes
 
 Utilisez le menu à gauche pour commencer 👈
 """)

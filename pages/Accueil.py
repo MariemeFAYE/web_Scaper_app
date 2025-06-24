@@ -32,11 +32,11 @@ with col1:
 
     st.markdown("### 📊 Analyse visuelle")
     st.write("- Dashboards interactifs avec **Plotly** et **Matplotlib**")
-    st.write("- Filtres dynamiques, métriques et graphiques")
+    
 
 with col2:
     st.markdown("### 📥 Téléchargement facile")
-    st.write("- Exporte les données brutes ou nettoyées en `.csv`")
+    st.write("- Exporte les données brutes en `.csv`")
 
     st.markdown("### 📝 Feedback utilisateur")
     st.write("- Formulaire d’évaluation intégré")
