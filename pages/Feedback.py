@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 from streamlit.components.v1 import html
 
+st.write("Token exists:", "KOBO_TOKEN" in st.secrets)
 # Configuration KoboToolbox
 KOBO_API_URL = "https://kobo.humanitarianresponse.info/api/v2/assets/"
 KOBO_TOKEN = st.secrets["KOBO_TOKEN"]

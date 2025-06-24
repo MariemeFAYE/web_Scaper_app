@@ -7,7 +7,7 @@ st.title("📥 Téléchargement des données brutes Web Scraper")
 # Dictionnaire des fichiers à télécharger
 FILES = {
     "Appartements": "data/raw/appartements_coinafrique_WSc.csv",
-    "Villas": "data/raw/villas_coinafrique_WSc.csv",
+    "Villas": "data/raw/Villas_coinafrique_WSc.csv",
     "Terrains": "data/raw/terrains_coinafrique_WSc.csv"
 }
 
