@@ -32,7 +32,7 @@ st.markdown(
     }
     </style>
     <div class="block-container">
-        <p class="main-title">🕸️ Web Scraper Dashboard</p>
+        <p class="main-title">🕸️ Web Scraper App</p>
         <p class="subtitle">Explorez, collectez et analysez facilement les données du web</p>
     </div>
     """,
