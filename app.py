@@ -4,7 +4,7 @@ import streamlit as st
 
 # Configuration générale de la page
 st.set_page_config(
-    page_title="🌐 Web Scraper Dashboard",
+    page_title="🌐 Web Scraper App",
     page_icon="🕸️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -39,10 +39,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Affiche une belle image en haut
+# Affiche image en haut
 st.image(
     "https://img.freepik.com/free-vector/web-scraping-concept-illustration_114360-9334.jpg",
-    use_container_width=True,  # Paramètre correct
+    use_container_width=True, 
     caption="Illustration du scraping web"
 )
 # Section d'accueil

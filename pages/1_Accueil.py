@@ -13,7 +13,7 @@ st.image("https://your-custom-banner-url.com/banner.png", use_container_width=Tr
 # Titre principal centré avec style
 st.markdown("""
     <div style='text-align: center; padding: 20px 0;'>
-        <h1 style='color: #2E86C1;'>Bienvenue sur <span style="color: #117864;">Web Scraper Dashboard</span></h1>
+        <h1 style='color: #2E86C1;'>Bienvenue sur <span style="color: #117864;">Web Scraper App</span></h1>
         <p style='font-size: 20px;'>Extraire, visualiser et analyser les données web n’a jamais été aussi simple !</p>
     </div>
 """, unsafe_allow_html=True)
