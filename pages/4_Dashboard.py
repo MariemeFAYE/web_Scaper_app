@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
+import seaborn as sns  # ✅ Ajout nécessaire
 import os
 
 # Configuration de la page
@@ -111,7 +112,7 @@ if df is not None:
                 st.plotly_chart(fig1, use_container_width=True)
             else:
                 fig, ax = plt.subplots(figsize=(10, 6))
-                plt.histplot(df_filtered['Prix'], bins=30, kde=True, ax=ax, color="orange")
+                sns.histplot(df_filtered['Prix'], bins=30, kde=True, ax=ax, color="orange")  # ✅ Correction ici
                 ax.set_xlabel("Prix (FCFA)")
                 ax.set_ylabel("Nombre")
                 ax.set_title("Distribution des Prix")
@@ -128,7 +129,7 @@ if df is not None:
                 st.plotly_chart(fig2, use_container_width=True)
             else:
                 fig, ax = plt.subplots(figsize=(10, 6))
-                plt.histplot(df_filtered['Nombre_pieces'], bins=15, kde=True, ax=ax, color="skyblue")
+                sns.histplot(df_filtered['Nombre_pieces'], bins=15, kde=True, ax=ax, color="skyblue")  # ✅
                 ax.set_xlabel("Nombre de pièces")
                 ax.set_ylabel("Fréquence")
                 ax.set_title("Distribution des pièces")
@@ -146,13 +147,11 @@ if df is not None:
                 st.plotly_chart(fig3, use_container_width=True)
             else:
                 fig, ax = plt.subplots(figsize=(10, 6))
-                plt.histplot(df_filtered['Superficie'], bins=30, kde=True, ax=ax, color="#EF553B")
+                sns.histplot(df_filtered['Superficie'], bins=30, kde=True, ax=ax, color="#EF553B")  # ✅
                 ax.set_xlabel("Superficie (m²)")
                 ax.set_ylabel("Nombre")
                 ax.set_title("Distribution des Superficies")
                 st.pyplot(fig)
-
-    
 
     # Données 
     if st.checkbox("Afficher les données"):
@@ -161,4 +160,3 @@ if df is not None:
 
 else:
     st.error(f"Le fichier {df_path} n'existe pas ou n'a pas pu être chargé.")
-
